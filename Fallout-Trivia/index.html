@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+      <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  />
+    <meta charset="UTF-8" />
+    <title>Trivia Game</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway|Sigmar+One"
+      rel="stylesheet"
+    />
+   
+    <link href="./assets/style/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="vignette-radial">
+    <div class="wrapper">
+      <div id="header" class="container">
+        <header class="wave">
+          <h1>Fallout New Vegas Trivia Game</h1>
+          <h2>
+            Answer the following questions to be granted access into Vault
+            112!!!
+          </h2>
+          <h3>Protect yourself and your family from Nuclear Fallout!</h3>
+        </header>
+      </div>
+
+      <div class="container">
+        <button class="btn btn-primary" id="start-button">Start</button>
+
+        <!-- Question page -->
+        <div id="questions">
+          <div id="timeLeft">Time Remaining:</div>
+          <div id="currentQuestion">Current Question:</div>
+          <div class="question">Questions:</div>
+          <div class="answerList">Answers:</div>
+        </div>
+
+        <div id="game-board">
+          <div id="Answers">
+            <div id="message"></div>
+            <div id="correctAnswer"></div>
+            <div id="gif"></div>
+          </div>
+        </div>
+       
+                
+                <div id=finalMessage></div>
+                <div id=correctAnswers></div>
+                <div id=incorrectAnswers></div>
+                <div id=unanswered></div>
+                <div id='startOverBtn'></div>
+           
+      </div>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script type="text/javascript" src="./assets/javascript/game2.js"></script>
+    </div>
+  </body>
+</html>

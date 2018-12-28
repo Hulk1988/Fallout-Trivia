@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    background-image: url(https://nekonekomovielitterbox.files.wordpress.com/2017/02/please-stand-by.jpg);
+    -webkit-background-size: cover;
+	font-family: 'Audiowide';
+    font-size: 25px;
+    color: white;
+    overflow: none;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.4) 75%, rgba(0, 255, 106, 0.3));
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.vignette-radial:after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: radial-gradient(circle, transparent 50%, black 150%);
+}
+
+#header{
+    animation:colorPulse 5s infinite ease-in-out;
+    color:rgb(67, 247, 232);
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 3px 3px 0px rgba(91, 226, 28, 0.5),
+        6px 6px 0px rgba(28, 226, 61, 0.3),
+        9px 9px 0px rgba(226, 206, 28, 0.1);
+        border-radius: 20px;
+    animation: 1s infinite alternate glow;
+    background-color: black;
+   
+
+}
+
+
+.btn-primary,.reset{
+	background-color: black;
+	color: white;
+	font-family: 'Sigmar One', sans-serif;
+	font-size: 30px;
+	padding: 20px;
+	margin-top: 100px;
+}
+.btn-primary:hover, .reset:hover{
+	background-color: #202364;
+}
+
+.container{
+	margin-top: 50px;
+	text-align: center;
+	height: 100%;
+	width: 700px;
+}
+
+
+.thisChoice:hover{
+	background-color: #202364;
+	color: white;
+	padding: 10px;
+}
+
+
+.wave:before {
+    animation: wave 10s infinite ease-in-out;
+    content:"";
+    height:20vh;
+    left:0;
+    opacity:.5;
+    position:absolute;
+    right:0;
+    z-index:1;
+}
+
+@keyframes wave {
+    0% {
+        box-shadow:0 -10vh 20vh #0c0;
+        top:-100vh;
+    }
+    48%, 52% {
+        box-shadow:0 -10vh 20vh #090;
+    }
+    50% {
+        box-shadow:0 -10vh 20vh #060;
+    }
+    100% {
+        box-shadow:0 -10vh 20vh #0c0;
+        top:200vh;
+    }
+}
